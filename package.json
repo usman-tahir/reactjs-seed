@@ -4,7 +4,9 @@
   "description": "A standalone ReactJS seed project",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run build",
+    "build": "webpack -d && cp src/index.html dist/index.html && webpack-dev-server --content-base src/ --inline",
+    "clean": "rm -r dist/"
   },
   "repository": {
     "type": "git",
