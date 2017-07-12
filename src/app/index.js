@@ -5,9 +5,9 @@ var root = document.getElementById('root');
 
 export class App extends React.Component {
 	render() {
-		return() {
+		return(
 			<h1>Hello, World!</h1>
-		};
+		);
 	}
 }
 
